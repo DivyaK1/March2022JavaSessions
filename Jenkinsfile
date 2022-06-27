@@ -35,7 +35,7 @@ pipeline
         stage('Regression Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/March2022JavaSessions.git'
+                    git 'https://github.com/DivyaK1/March2022SeleniumFramework.git'
                     sh "mvn clean install"
                     
                 }
