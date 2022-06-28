@@ -3,7 +3,7 @@ pipeline
     agent any
     
     tools{
-    	maven 'm2'
+    	maven 'M3'
         }
 
     stages 
