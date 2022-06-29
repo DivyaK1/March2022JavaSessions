@@ -10,10 +10,8 @@ pipeline
     {
         stage('Build') 
         {
-          steps
-            {
-               git 'https://github.com/naveenanimation20/March2022JavaSessions.git'
-                    sh "mvn clean install"
+          steps{
+                echo("Build project")
             }
                 
         }
