@@ -27,7 +27,7 @@ pipeline
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
                     git 'https://github.com/DivyaK1/March2022SeleniumFramework.git'
-                    sh "mvn clean install"
+                    bat "mvn clean install"
                     
                 }
             }
