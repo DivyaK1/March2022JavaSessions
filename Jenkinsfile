@@ -12,17 +12,10 @@ pipeline
         {
             steps
             {
-                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
+                 git 'https://github.com/naveenanimation20/March2022JavaSessions.git'
+                 bat "mvn clean install"
             }
-            post 
-            {
-                success
-                {
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
-                }
-            }
+            
         }
         
         
